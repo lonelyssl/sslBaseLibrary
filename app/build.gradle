@@ -24,8 +24,10 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:'+param.appcompatV7
-    implementation 'com.android.support.constraint:constraint-layout:'+param.constraintLayout
+    implementation 'com.android.support:appcompat-v7:' + param.appcompatV7
+    implementation 'com.android.support.constraint:constraint-layout:' + param.constraintLayout
+    implementation project(':commonUtilsLib')
+    implementation project(':commonCoreLib')
 }
