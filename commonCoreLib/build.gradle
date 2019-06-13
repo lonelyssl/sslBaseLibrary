@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    def extParams = rootProject.ext;
+    compileSdkVersion extParams.androidCompileSdkVersion
+
+    defaultConfig extParams.defaultConfig
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    def extParams = rootProject.ext
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:' + extParams.appcompatV7
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:"+extParams.kotlinVersion
+}
+repositories {
+    mavenCentral()
+}
