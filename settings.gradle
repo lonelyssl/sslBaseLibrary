@@ -1,1 +1,1 @@
-include ':app', ':commonUtilsLib', ':commonCoreLib'
+include ':app', ':commonUtilsLib', ':commonCoreLib', ':moduleBase'

@@ -1,0 +1,16 @@
+使用说明
+一、目前lib中使用的aar的版本写在它的build.gradle文件中，修改需要手动修改
+
+二、在项目的settings.gradle家长module
+include ':commonUtilsLib'
+project(':commonUtilsLib').projectDir = new File('../sslBaseLibrary/commonUtilsLib')
+
+include ':commonCoreLib'
+project(':commonCoreLib').projectDir = new File('../sslBaseLibrary/commonCoreLib')
+
+include ':moduleBase'
+project(':moduleBase').projectDir = new File('../sslBaseLibrary/moduleBase')
+
+三、引用moduleBase库配置greenDao
+在根build.gradle配置
+  classpath "org.greenrobot:greendao-gradle-plugin:3.2.2"

@@ -2,10 +2,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    def extParams = rootProject.ext;
-    compileSdkVersion extParams.androidCompileSdkVersion
-
-    defaultConfig extParams.defaultConfig
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
 
     buildTypes {
         release {
@@ -24,7 +28,7 @@ dependencies {
     def extParams = rootProject.ext
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:' + extParams.appcompatV7
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:"+extParams.kotlinVersion
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:" + extParams.kotlinVersion
 }
 repositories {
     mavenCentral()
