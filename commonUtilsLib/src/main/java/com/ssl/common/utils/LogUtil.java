@@ -123,6 +123,7 @@ final public class LogUtil {
 
 
     public static void e(String msg) {
+        //测试
         e(Tag, msg);
     }
 
