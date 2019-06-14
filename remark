@@ -1,4 +1,11 @@
 使用说明
+module说明：
+commonUtilsLib：工具类库；包括工具类、基于okhttp3的封装、基于glide的图片库封装
+commonCoreLib：框架管理库；包括基于接口的组件化封装、简单MVP封装
+moduleBase：基础项目module封装，针对项目提供统一的TitleBar、BaseActivity等，该库需要针对自己项目调整
+
+
+
 一、目前lib中使用的aar的版本写在它的build.gradle文件中，修改需要手动修改
 
 二、在项目的settings.gradle添加module
