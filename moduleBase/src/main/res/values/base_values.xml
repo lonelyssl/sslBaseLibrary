@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- 基础字体大小 -->
+    <dimen name="base_text_big_big_size">20sp</dimen>
+    <dimen name="base_text_big_size">16sp</dimen>
+    <dimen name="base_text_size">14sp</dimen>
+    <dimen name="base_text_small_size">12sp</dimen>
+    <dimen name="base_text_small_small_size">10sp</dimen>
+
+    <!-- 基础的高度 -->
+    <dimen name="base_title_h">50dp</dimen>
+    <dimen name="base_line_h">50dp</dimen>
+    <dimen name="base_btn_h">40dp</dimen>
+
+    <!--基础背景颜色-->
+    <color name="bgGray">#f2f2f2</color>
+    <color name="bgWhite">#fff</color>
+    <color name="base_btn_color">@color/colorPrimary</color>
+
+
+    <!-- 颜色 -->
+    <color name="base_text_color">#666666</color>
+    <color name="base_text_color_black">#000000</color>
+    <color name="base_text_color_light_gray">#999</color>
+    <color name="base_text_color_gray">#666666</color>
+    <color name="base_text_color_more_gray">#333</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0066FF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+
+
+    <!--基础样式-->
+
+    <style name="tool_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_btn_h</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/base_bg_btn_selector_blue</item>
+        <item name="android:textSize">@dimen/base_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:drawableRight">@mipmap/bmodule_ic_right</item>
+    </style>
+
+    <style name="common_tool_btn" parent="@style/tool_btn">
+        <item name="android:drawableRight">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tool_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/base_text_size</item>
+        <item name="android:textColor">@color/base_text_color</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="tool_division">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#f2f2f2</item>
+    </style>
+
+</resources>

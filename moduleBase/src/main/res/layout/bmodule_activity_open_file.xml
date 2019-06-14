@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/bgWhite"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/tool_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据路径：" />
+
+        <EditText
+            android:id="@+id/tv_file_path"
+            style="@style/tool_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="为获取可导入的数据文件"
+            android:minHeight="50dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_restore"
+        style="@style/tool_btn"
+        android:layout_marginTop="20dp"
+        android:text="确认导入" />
+
+
+</LinearLayout>
